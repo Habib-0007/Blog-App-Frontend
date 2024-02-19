@@ -9,6 +9,10 @@ body {
 	background: var(--lightgrey);
 }
 
+img {
+	object-fit: cover;
+}
+
 header {
 	width: 100%;
 }
@@ -86,4 +90,60 @@ header .display-pic i {
 	font-size: 18px;
 	font-weight: bold;
 	border-radius: 5px;
+}
+
+.post-head {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	gap: 12px;
+}
+
+.timeline-post {
+	padding: 24px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 16px;
+	
+}
+
+.timeline-post .post {
+	padding: 24px 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 12px;
+	background: var(--white);
+	border-radius: 8px;
+}
+
+.post-head img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.post-head h1 {
+	font-size: 16px;
+}
+
+.post-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.post-body h6 {
+	font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.timeline-post {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
