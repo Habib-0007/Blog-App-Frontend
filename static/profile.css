@@ -77,8 +77,10 @@ header .display-pic i {
 	font-size: 20px;
 }
 
-.name p {
+.name > p {
 	margin-block: 6px;
+	font-size: 18px;
+	font-weight: bolder;
 	color: var(--blue);
 }
 
@@ -90,6 +92,19 @@ header .display-pic i {
 	font-size: 18px;
 	font-weight: bold;
 	border-radius: 5px;
+}
+
+.follow {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 12px;
+}
+
+.follow p {
+	color: var(--black);
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .post-head {
