@@ -105,13 +105,12 @@ header .display-pic i {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 16px;
-	
 }
 
 .timeline-post .post {
 	padding: 24px 12px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
 	gap: 12px;
@@ -132,7 +131,7 @@ header .display-pic i {
 
 .post-body {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
 	gap: 8px;
@@ -140,6 +139,20 @@ header .display-pic i {
 
 .post-body h6 {
 	font-size: 20px;
+}
+
+.post-body article {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.post-body article img {
+	display: block;
+	width: 100%;
+	border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) {
