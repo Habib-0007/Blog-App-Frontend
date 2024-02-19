@@ -155,6 +155,24 @@ header .display-pic i {
 	border-radius: 8px;
 }
 
+.post-engagement {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	text-align: center;
+	gap: 12px;
+}
+
+.post-engagement i {
+	background: var(--lightgrey);
+	color: var(--black);
+	padding: 8px 14px;
+	font-size: 18px;
+	border-radius: 6px;
+}
+
 @media screen and (min-width: 768px) {
 	.timeline-post {
 		grid-template-columns: repeat(2, 1fr);
