@@ -28,23 +28,12 @@ header > img {
 	border: 2px solid var(--white);
 }
 
-.timeline-post {
-	padding: 24px;
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 16px;
+.blog-content {
 	margin-bottom: 65px;
+	padding: 24px;
 }
 
-.post-head {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: row;
-	gap: 12px;
-}
-
-.timeline-post .post {
+.blog-content .post {
 	padding: 24px 12px;
 	display: flex;
 	justify-content: flex-start;
@@ -55,6 +44,13 @@ header > img {
 	border-radius: 8px;
 }
 
+.post-head {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	gap: 12px;
+}
 .post-head img {
 	display: block;
 	width: 30px;
@@ -90,24 +86,6 @@ header > img {
 	display: block;
 	width: 100%;
 	border-radius: 8px;
-}
-
-.post-engagement {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: row;
-	text-align: center;
-	gap: 12px;
-}
-
-.post-engagement i {
-	background: var(--lightgrey);
-	color: var(--black);
-	padding: 8px 14px;
-	font-size: 18px;
-	border-radius: 6px;
 }
 
 footer {

@@ -114,14 +114,6 @@ header .display-pic i {
 	grid-gap: 16px;
 }
 
-.post-head {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: row;
-	gap: 12px;
-}
-
 .timeline-post .post {
 	padding: 24px 12px;
 	display: flex;
@@ -131,6 +123,14 @@ header .display-pic i {
 	gap: 12px;
 	background: var(--white);
 	border-radius: 8px;
+}
+
+.post-head {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	gap: 12px;
 }
 
 .post-head img {
