@@ -14,6 +14,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="../static/global.css"
@@ -41,16 +42,10 @@
 					/>
 					<h1>Oreoluwa Isaac</h1>
 				</div>
-									<div class="post-body">
-						<h6 class="title">Effects of Climate Changes in Nigeria</h6>
-						<article>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Necessitatibus quisquam id hic ea voluptate sapiente architecto
-							ullam. Facilis id consequatur culpa, quasi porro, ipsam commodi
-							magni soluta reiciendis eius debitis.
-						</article>
-					</div>
-
+				<div class="post-body">
+					<h6 class="title">Effects of Climate Changes in Nigeria</h6>
+					<article></article>
+				</div>
 			</div>
 		</section>
 		<footer>
@@ -60,5 +55,32 @@
 				<i class="far fa-user"></i>
 			</article>
 		</footer>
+		<script>
+			var content = `
+	# The Power of Markdown
+
+  ## Introduction
+
+Markdown is a lightweight markup language that allows you to add formatting elements to plain text documents. It's designed to be easy to read and write, and it's used extensively in various applications such as GitHub, Reddit, and many blogging platforms.
+
+## Why Use Markdown?
+
+- **Simplicity**: Markdown syntax is straightforward and easy to learn.
+- **Portability**: Files containing Markdown-formatted text can be opened using virtually any application.
+- **Platform Independence**: You can create Markdown-formatted text on any device running any operating system.
+- **Future Proof**: Even if the application you're using stops working, you'll still be able to read your Markdown-formatted text using a text editing application.
+- **Widespread Use**: Markdown is supported by many websites and applications, making it a versatile choice for content creation.
+
+## Basic Syntax
+
+Here are some basic syntax examples:
+
+- Headers:
+[markdown-it](https://cdn.jsdelivr.net/npm/markdown-it@13.0.2/dist/markdown-it.min.js)
+
+`;
+			document.querySelector(".post-body article").innerHTML =
+				marked.parse(content);
+		</script>
 	</body>
 </html>
