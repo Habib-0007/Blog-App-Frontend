@@ -30,7 +30,6 @@ header > img {
 
 .blog-content {
 	margin-bottom: 65px;
-	padding: 24px;
 }
 
 .blog-content .post {
@@ -41,7 +40,6 @@ header > img {
 	flex-direction: column;
 	gap: 12px;
 	background: var(--white);
-	border-radius: 8px;
 }
 
 .post-head {

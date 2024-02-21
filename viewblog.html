@@ -44,7 +44,9 @@
 				</div>
 				<div class="post-body">
 					<h6 class="title">Effects of Climate Changes in Nigeria</h6>
-					<article></article>
+					<md-block>
+						<article></article>
+					</md-block>
 				</div>
 			</div>
 		</section>
@@ -56,10 +58,9 @@
 			</article>
 		</footer>
 		<script>
-			var content = `
-	# The Power of Markdown
+			var content = `# The Power of Markdown
 
-  ## Introduction
+ ## Introduction
 
 Markdown is a lightweight markup language that allows you to add formatting elements to plain text documents. It's designed to be easy to read and write, and it's used extensively in various applications such as GitHub, Reddit, and many blogging platforms.
 
@@ -77,6 +78,8 @@ Here are some basic syntax examples:
 
 - Headers:
 [markdown-it](https://cdn.jsdelivr.net/npm/markdown-it@13.0.2/dist/markdown-it.min.js)
+
+![Random Image](https://source.unsplash.com/random)
 
 `;
 			document.querySelector(".post-body article").innerHTML =
